@@ -1,0 +1,30 @@
+var ta1 = [3, 1, 7, 9];
+var ta2 = [2, 4, 1, 9, 3];
+var sum = 0;
+var faux = 0;
+var k = 0;
+for (var i=0 ;i < ta1.length;i++){
+  faux=0;
+  k=0;
+ while (faux!==1 && k < ta2.length){
+   if(ta1[i]===ta2[k]){
+     faux=1;
+}
+k=k+1;     
+}
+if (faux===0)
+sum=sum+ta1[i];
+}
+for (var j=0 ;j < ta2.length;j++){
+  faux=0;
+  f=0;
+ while (faux!==1 && f < ta1.length){
+   if(ta1[j]===ta2[f]){
+     faux=1;
+}
+f=f+1;     
+}
+if (faux===0)
+sum=sum+ta2[j];
+}
+console.log(sum);

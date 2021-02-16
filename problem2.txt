@@ -1,0 +1,33 @@
+var ta1 = [12, 13, 6, 10];
+var ta2 = [13, 10, 16, 15];
+var sum = 0;
+var faux = 0;
+var k = 0;
+for (var i=0 ;i <= ta1.length;i++){
+  faux=1;
+  k=0;
+ while ( k < ta2.length){
+   if(ta1[i]===ta2[k]){
+     faux=0;
+}
+k=k+1;     
+}
+if (faux===0)
+sum=sum+ta1[i];
+
+}
+for (var j=0 ;j <= ta2.length;j++){
+  faux=1;
+  f=0;
+ while ( f < ta1.length){
+   if(ta1[j]===ta2[f]){
+     faux=0;
+}
+f=f+1;     
+}
+if (faux===0)
+sum=sum+ta1[j];
+
+}
+
+console.log(sum);
